@@ -5,9 +5,29 @@
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
     <title>BigDevSoon - Business Card Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            poppins: ["poppins", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="h-screen w-screen bg-green-100 p-20">
+  <body class="h-screen w-screen bg-green-100 p-20 font-poppins">
     <!-- Place below is for your own exciting code -->
     <div
       class="bg-white rounded-3xl shadow-2xl w-3/4 h-full mx-auto flex overflow-hidden relative"
@@ -29,13 +49,13 @@
             </h2>
             <p class="mt-3"><a href="">htetwaiyan.engr@gmail.com</a></p>
           </div>
-          <div>
-            <h2 class="font-semibold flex mt-8">
+          <div class="mt-10">
+            <h2 class="font-semibold flex">
               <img
                 src="assets/icons/phone-icon.svg"
                 alt=""
                 class="inline self-start me-1"
-              />Phone
+              />Email
             </h2>
             <p class="mt-3"><a href="">(+95) 969 213 1787</a></p>
           </div>
@@ -56,7 +76,29 @@
           </div>
         </div>
       </div>
-      <div class="colums-9"></div>
+      <div class="bg-grey-100 w-2/3 ps-96 pe-12 pt-32">
+        <h1 class="font-semibold text-5xl leading-tight">
+          <span class="text-green-700">Htet</span><br />Wai Yan
+        </h1>
+        <div class="mt-5">
+          <h2 class="font-semibold text-lg">Front-end Developer . Myanmar</h2>
+          <p class="mt-3">
+            High accomplishment and user-focused Front-end Developer adept in
+            collaborating with UX and design teams to plan the technical writing
+            and execution of functional specifications for websites and
+            applications.
+          </p>
+        </div>
+        <div class="mt-5">
+          <h2 class="font-semibold text-lg">Working with technologies:</h2>
+          <ul class="list-inside list-disc mt-3">
+            <li>JavaScript</li>
+            <li class="mt-3">React</li>
+            <li class="mt-3">NodeJs</li>
+            <li class="mt-3">Laravel</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- Change the [ME] part to your own name/GitHub link -->
     <div class="footer">
